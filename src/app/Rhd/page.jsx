@@ -7,10 +7,19 @@ import { FaPhone } from "react-icons/fa6";
 import { FaMobileAlt } from "react-icons/fa";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import img from "../../../public/img.jpeg"
 
 
 
 const page = () => {
+
+  const pages = [
+    { img: "/img.jpeg", name: "Muhammad Murad", title: "RHD Rahim Khan", para: "My name is Tufail Ahmed and I have been suffering from Asthma since childhood. I cannot afford treatment due to high costs of medication. Someone told me about Shifaam Remote Health Desk. The doctor revied my case thoroughly and prescribed medicines that were given to me free of cost. Alhamdulilah, I am feeling better and can go to work. Thank you Shifaam for this wonderful initiative. My prayers are with you." },
+    { img: "/img.jpeg", name: "Muhammad Murad", title: "RHD Rahim Khan", para: "My name is Tufail Ahmed and I have been suffering from Asthma since childhood. I cannot afford treatment due to high costs of medication. Someone told me about Shifaam Remote Health Desk. The doctor revied my case thoroughly and prescribed medicines that were given to me free of cost. Alhamdulilah, I am feeling better and can go to work. Thank you Shifaam for this wonderful initiative. My prayers are with you." },
+    { img: "/img.jpeg", name: "Muhammad Murad", title: "RHD Rahim Khan", para: "My name is Tufail Ahmed and I have been suffering from Asthma since childhood. I cannot afford treatment due to high costs of medication. Someone told me about Shifaam Remote Health Desk. The doctor revied my case thoroughly and prescribed medicines that were given to me free of cost. Alhamdulilah, I am feeling better and can go to work. Thank you Shifaam for this wonderful initiative. My prayers are with you." },
+  ]
+
+  console.log(pages)
 
 
   return (
@@ -176,17 +185,28 @@ const page = () => {
 
 
           </div>
-
           <div className="w-2/4">
-            <h2 className="text-5xl  px-12  font-bold  mt-5">
+            <h2 className="text-5xl font-bold my-5">
               Patient Satisfication
             </h2>
-            <Carousel>
-
+            <Carousel autoPlay={true} emulateTouch={true}>
+              {
+                pages.map(page => {
+                  return <div className="flex flex-col text-start gap-6">
+                    <p>{page.para}</p>
+                    <div className="flex items-center justify-start gap-6">
+                      <div>
+                        <img className=" w-[80px] h-[80px] rounded-full" src={page.img} alt={page.name} />
+                      </div>
+                      <div>
+                        <p>{page.name}</p>
+                        <p>{page.title}</p>
+                      </div>
+                    </div>
+                  </div>
+                })
+              }
             </Carousel>
-
-
-
           </div>
         </div>
 
