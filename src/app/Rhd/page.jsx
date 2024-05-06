@@ -7,20 +7,15 @@ import { FaPhone } from "react-icons/fa6";
 import { FaMobileAlt } from "react-icons/fa";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import img from "../../../public/img.jpeg"
-
-
 
 const page = () => {
 
   const pages = [
-    { img: "/img.jpeg", name: "Muhammad Murad", title: "RHD Rahim Khan", para: "My name is Tufail Ahmed and I have been suffering from Asthma since childhood. I cannot afford treatment due to high costs of medication. Someone told me about Shifaam Remote Health Desk. The doctor revied my case thoroughly and prescribed medicines that were given to me free of cost. Alhamdulilah, I am feeling better and can go to work. Thank you Shifaam for this wonderful initiative. My prayers are with you." },
-    { img: "/img.jpeg", name: "Muhammad Murad", title: "RHD Rahim Khan", para: "My name is Tufail Ahmed and I have been suffering from Asthma since childhood. I cannot afford treatment due to high costs of medication. Someone told me about Shifaam Remote Health Desk. The doctor revied my case thoroughly and prescribed medicines that were given to me free of cost. Alhamdulilah, I am feeling better and can go to work. Thank you Shifaam for this wonderful initiative. My prayers are with you." },
-    { img: "/img.jpeg", name: "Muhammad Murad", title: "RHD Rahim Khan", para: "My name is Tufail Ahmed and I have been suffering from Asthma since childhood. I cannot afford treatment due to high costs of medication. Someone told me about Shifaam Remote Health Desk. The doctor revied my case thoroughly and prescribed medicines that were given to me free of cost. Alhamdulilah, I am feeling better and can go to work. Thank you Shifaam for this wonderful initiative. My prayers are with you." },
+    { id: 1, img: "/img.jpeg", name: "Muhammad Murad", title: "RHD Rahim Khan", para: "My name is Tufail Ahmed and I have been suffering from Asthma since childhood. I cannot afford treatment due to high costs of medication. Someone told me about Shifaam Remote Health Desk. The doctor revied my case thoroughly and prescribed medicines that were given to me free of cost. Alhamdulilah, I am feeling better and can go to work. Thank you Shifaam for this wonderful initiative. My prayers are with you." },
+    { id: 2, img: "/img.jpeg", name: "Muhammad Murad", title: "RHD Rahim Khan", para: "My name is Tufail Ahmed and I have been suffering from Asthma since childhood. I cannot afford treatment due to high costs of medication. Someone told me about Shifaam Remote Health Desk. The doctor revied my case thoroughly and prescribed medicines that were given to me free of cost. Alhamdulilah, I am feeling better and can go to work. Thank you Shifaam for this wonderful initiative. My prayers are with you." },
+    { id: 3, img: "/img.jpeg", name: "Muhammad Murad", title: "RHD Rahim Khan", para: "My name is Tufail Ahmed and I have been suffering from Asthma since childhood. I cannot afford treatment due to high costs of medication. Someone told me about Shifaam Remote Health Desk. The doctor revied my case thoroughly and prescribed medicines that were given to me free of cost. Alhamdulilah, I am feeling better and can go to work. Thank you Shifaam for this wonderful initiative. My prayers are with you." },
+    { id: 4, img: "/img.jpeg", name: "Muhammad Murad", title: "RHD Rahim Khan", para: "My name is Tufail Ahmed and I have been suffering from Asthma since childhood. I cannot afford treatment due to high costs of medication. Someone told me about Shifaam Remote Health Desk. The doctor revied my case thoroughly and prescribed medicines that were given to me free of cost. Alhamdulilah, I am feeling better and can go to work. Thank you Shifaam for this wonderful initiative. My prayers are with you." },
   ]
-
-  console.log(pages)
-
 
   return (
     <>
@@ -35,7 +30,6 @@ const page = () => {
               <br></br>underserved patients.
             </p>
             <button className="hover:underline px-12 text-orange-600 mt-5 flex items-center gap-2">
-              {" "}
               <MdSlowMotionVideo className="w-1/5 h-20" /> Watch Rhd Video
             </button>
           </div>
@@ -43,10 +37,8 @@ const page = () => {
             <img className="h-80 w-64 absolute right-[410px] object-cover object-center top-20 rounded-br-3xl rounded-tl-3xl shadow-md" src="docter.jpg" />
             <img className="w-80 h-50 absolute right-[50px] top-10 object-cover object-center" src="docter-2.jpg" />
             <img className="w-80 h-50 absolute right-[50px] top-[280px] object-cover object-center rounded-br-full" src="docter-3.jpg" />
-
           </div>
         </div>
-
         <div className="w-full mt-16 mb-16 flex px-12 items-center">
           <div className="w-2/4">
             <img className=" px-48 w-full h-full" src="/patient.avif" alt="img" />
@@ -74,8 +66,6 @@ const page = () => {
             <p className="mt-3  flex items-center gap-2"><FaRegCheckCircle className="text-[#c30404]" />Number of Certified Doctors.<span className="font-bold">- 20</span></p>
           </div>
         </div>
-
-
         <div className="w-full flex items-center">
           <div className="w-2/4">
             <h2 className="text-5xl  px-12  font-bold mt-5">
@@ -88,102 +78,66 @@ const page = () => {
                   <img className="w-12" src="problem-1.jpg" alt="img" />
                   <p className="px-6">  Inaccessibility of certified doctors</p>
                 </div>
-
                 <div className=" w-[750px] px-12 py-4  bg-white shadow-2xl border top-28 rounded-xl flex items-center   absolute  hover:shadow-gray-500">
                   <img className="w-12" src="problem-2.jpg" alt="img" />
                   <p className="px-6"> Insufficient availability of medicines</p>
                 </div>
-
                 <div className=" w-[750px] px-12 py-4  bg-white shadow-2xl border top-56 rounded-xl  flex items-center absolute  hover:shadow-gray-500">
                   <img className="w-12" src="problem-3.jpg" alt="img" />
                   <p className="px-6"> Lack of infrastructures</p>
                 </div>
-
                 <div className=" w-[750px] px-12 py-4  bg-white shadow-2xl border top-[345px] rounded-xl flex items-center  absolute  hover:shadow-gray-500">
                   <img className="w-12" src="problem-4.jpg" alt="img" />
                   <p className="px-6">Poverty</p>
                 </div>
               </div>
             </div>
-
-
-
-
           </div>
-
           <div className="w-2/4">
             <img className="w-2/3  ml-36" src="map.jpg" alt="img" />
           </div>
         </div>
-
-
-        <div className="w-full flex items-center ">
-
-          <div className="w-2/4">
-            <h2 className="text-5xl  ml-[470px]  font-bold  mt-5 mb-4">
+        <div className="w-[90%] m-auto flex items-center ">
+          <div className="w-2/4 p-5">
+            <h2 className="text-5xl text-right font-bold my-4">
               ریموٹ ہیلتھ ڈیسک
             </h2>
-
-            <ul className="ml-36 mb-2 ">
+            <ul className="text-right mb-2">
               <li >
                 موجودہ سرکاری ہسپتالوں پر بڑھتے ہوئے ہجوم کو کم کرنے کے لئے شِفام ہیلتھ ٹیک پرائیویٹ لمیٹڈ نے آن لائن چلنے والے ریموٹ ہیلتھ ڈیسک قائم کئے ہیں۔ جن میں سندھ اور پنجاب کے دیہی علاقوں میں مستحق مریضوں کو ۔
-                <span className="pl-[172px]">ڈاکٹر سے مفت آن لائن مشورے کے ساتھ ساتھ مفت ادویات بھی فراہم کی جاتی ہیں</span>
-
+                <span>ڈاکٹر سے مفت آن لائن مشورے کے ساتھ ساتھ مفت ادویات بھی فراہم کی جاتی ہیں</span>
               </li>
-
-              <li className="ml-[550px] flex items-center gap-2 mt-2">
-
+              <li className="flex justify-end items-center gap-2 mt-2">
                 .مفت ادویات
-                <TiTick className="bg-green-200 rounded-full text-white" />
+                <TiTick className="bg-green-600 rounded-full text-white" />
               </li>
-
-              <li className="ml-[440px] mt-2 flex items-center gap-1 ">
-
+              <li className="flex justify-end items-center gap-2 mt-2">
                 .مفت ڈاکٹر اور مریض مشاورت
-                <TiTick className="bg-green-200 rounded-full text-white" />
-
+                <TiTick className="bg-green-600 rounded-full text-white" />
               </li>
-
-              <li className="ml-[80px] mt-4 ">
+              <li className="mt-4 ">
                 .اگر آپ مستحق مریضوں کی مدد کے لئے اپنے علاقے میں ریموٹ ہیلتھ ڈیسک قائم کرنا چاہتے ہیں تو
                 <span className="pl-[340px]">ابھی دیئے گئے نمبر پر رابطہ کریں</span>
-
-
               </li>
-
-              <li className="ml-[490px] flex items-center gap-2 mt-4">
-
+              <li className="flex justify-end items-center gap-2 mt-2">
                 021 37132273
                 <FaPhone className="bg-green-600 rounded-full text-white" />
               </li>
-              <li className="ml-[490px] flex items-center gap-2 mb-8">
+              <li className="flex justify-end items-center gap-2 mt-2">
                 021 37132273
                 <FaMobileAlt className="bg-green-600 rounded-full text-white" />
               </li>
-
               <li>
-
               </li>
             </ul>
           </div >
-          <div className="w-2/4 flex items-center gap-24 flex-wrap  mb-10 px-24">
-
-
+          <div className="w-2/4 p-5 gap-10 flex-wrap">
             <img src="solution.jpg" alt="" />
-
-
           </div>
-
         </div>
-
-
-
-
         <div className="w-full flex items-center">
           <div className="w-2/4">
             <img src="rhd1.jpg" alt="img" />
-
-
           </div>
           <div className="w-2/4">
             <h2 className="text-5xl font-bold my-5">
@@ -192,7 +146,7 @@ const page = () => {
             <Carousel autoPlay={true} emulateTouch={true}>
               {
                 pages.map(page => {
-                  return <div className="flex flex-col text-start gap-6">
+                  return <div key={page.id} className="flex flex-col text-start gap-6">
                     <p>{page.para}</p>
                     <div className="flex items-center justify-start gap-6">
                       <div>
@@ -209,15 +163,7 @@ const page = () => {
             </Carousel>
           </div>
         </div>
-
-
-
       </div>
-
-
-
-
-
     </>
   )
 }
